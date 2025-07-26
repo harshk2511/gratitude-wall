@@ -5,10 +5,10 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: 'index.html',
-        createPost: 'createPost.html',
-        publicWall: 'publicWall.html',
-        publicUserProfile: 'publicUserProfile.html',
-        privateUserProfile: 'privateUserProfile.html'
+        // createPost: 'createPost.html',
+        // publicWall: 'publicWall.html',
+        // publicUserProfile: 'publicUserProfile.html',
+        // privateUserProfile: 'privateUserProfile.html'
       }
     }
   }

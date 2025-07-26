@@ -7,4 +7,122 @@ html {
   height: 100%;
   margin: 0;
   padding: 0;
+  overflow: hidden;
+  background-image: url("/peach-mountain-reduced-opacity.png");
+
+}
+
+body {
+  height: 100%;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+button,
+input,
+textarea {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#app {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.title {
+  font-family: "Ms Madi", cursive;
+  font-weight: 400;
+  font-style: normal;
+
+  font-size: 6rem;
+  color: #C599B6;
+  
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 4rem;
+  }
+}
+
+#login-signup-div {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.google-sign-in {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.login-div, .signup-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.login-signup-text {
+  font-size: 1.5rem;
+}
+
+input, button {
+  width: 16rem;
+  text-align: center;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.2rem;
+  border-radius: 50px;
+}
+
+input {
+  border: 1px solid #FAD0C4;
+}
+
+#login-btn, #signup-btn {
+  background-color: #E6B2BA;
+  color: white;
+  border: none;
+}
+
+#google-signin-btn {
+  border: 1px solid #FAD0C4;
+  color: black;
+  background-color: white;
+}
+
+.fa-google {
+  margin-right: 0.5rem;
 }
