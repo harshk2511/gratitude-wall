@@ -16,7 +16,9 @@ const provider = new GoogleAuthProvider();
 
 // Selecting elements
 const googleSigninBtn = document.getElementById("google-signin-btn");
+const ssButtonsDiv = document.getElementById("small-screens-btn-div");
 
+// Google sign in
 googleSigninBtn.addEventListener("click", function() {
     signInWithPopup(auth, provider)
     .then((result) => {
@@ -28,3 +30,11 @@ googleSigninBtn.addEventListener("click", function() {
         console.log(error)
     })
 })
+
+// Mobile Devices Display
+console.log(window.innerWidth);
+console.log(window.innerHeight);
+
+if (window.innerWidth >= 1024) {
+    ssButtonsDiv.style.display = "none";
+}
