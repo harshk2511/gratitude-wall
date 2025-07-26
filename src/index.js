@@ -2,7 +2,7 @@ import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCDRZRHgN5Iogx95zXMhka9cPZjiLDGrhc",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: "gratitude-wall-f3220.firebaseapp.com",
   projectId: "gratitude-wall-f3220",
   storageBucket: "gratitude-wall-f3220.firebasestorage.app",
