@@ -35,6 +35,6 @@ googleSigninBtn.addEventListener("click", function() {
 console.log(window.innerWidth);
 console.log(window.innerHeight);
 
-if (window.innerWidth >= 1024) {
+if (window.innerWidth >= 768) {
     ssButtonsDiv.style.display = "none";
 }
