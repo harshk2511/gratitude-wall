@@ -58,6 +58,7 @@ textarea {
   color: #C599B6;
   
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 @media (max-width: 768px) {
@@ -73,6 +74,7 @@ textarea {
   justify-content: center;
   align-items: flex-start;
   flex-wrap: nowrap;
+  margin-bottom: 1rem;
 }
 
 .google-sign-in {
@@ -93,6 +95,20 @@ textarea {
   margin: 0 2rem auto 2rem;
   gap: 1rem;
   padding: 1rem;
+}
+
+.divider {
+  width: 2px;
+  background-color: #FAD0C4; /* light grey line */
+  height: 95%; /* or 100% depending on design */
+  margin: 0 2rem;
+}
+
+/* Hide divider on small screens */
+@media (max-width: 768px) {
+  .divider {
+    display: none;
+  }
 }
 
 .login-signup-text {
@@ -121,6 +137,7 @@ input {
   border: 1px solid #FAD0C4;
   color: black;
   background-color: white;
+  margin-bottom: 1rem;
 }
 
 .fa-google {
@@ -137,19 +154,19 @@ input {
   align-items: center;
 }
 
-#login-ss, #signup-ss {
+#login-ss-btn, #signup-ss-btn {
   width: 10rem;
   padding: 0.5rem 1rem 0.5rem 1rem;
   border: none;
 }
 
-#login-ss {
+#login-ss-btn {
   border-radius: 10px 0 0 10px;
   background-color: #E6B2BA;
   color: white;
 }
 
-#signup-ss {
+#signup-ss-btn {
   border-radius: 0 10px 10px 0;
   background-color: white;
   color: #E6B2BA;
